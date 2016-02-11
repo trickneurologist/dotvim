@@ -152,7 +152,7 @@ let g:netrw_altv = 1
 " Default to tree mode
 let g:netrw_liststyle=3
 " Change directory to the current buffer when opening files.
-" set autochdir
+set autochdir
 
 nnoremap <F5> :buffers<CR>:buffer<Space>
 
@@ -164,6 +164,7 @@ inoremap <c-u> <esc>viwU<esc>i
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>ww :set wrap!<cr>
+nnoremap <leader>nh :noh<cr>
 inoremap jk <esc>
 
 map <c-Up> g<Up>
